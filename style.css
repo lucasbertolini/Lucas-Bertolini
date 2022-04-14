@@ -93,6 +93,32 @@
 .border-radius img {
   width: 150px;
 }
+.cursos {
+  text-align: center;
+  background-color: #49eede;
+  font-size: 22px;
+  padding: 10px 0;
+}
+.cursos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  font-size: 19px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+}
+.descricao-api {
+  font-size: 15px;
+}
+.descricao-api a {
+  text-decoration: none;
+  color: black;
+}
+.descricao-api a:hover {
+  text-decoration: underline;
+}
 footer {
   height: 100px;
   background-color: #8898f3;
