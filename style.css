@@ -200,9 +200,7 @@ footer {
     flex-direction: column;
     margin-left: 10px;
   }
-  .container-app img {
-    width: auto;
-  }
+
   .projetos {
     width: 96vw;
   }
