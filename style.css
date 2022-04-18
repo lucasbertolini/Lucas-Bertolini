@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+.top-btn{
+  display:none;
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:99;
+  outline:none;
+  font-weight:bold;
+  font-size: 22px;
+  padding:5px;
+  border-radius:10px;
+  text-transform:uppercase;
+  background-color:rgb(255, 145, 0);
+  
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 70px;
+  font-size: 18px;
+  background-color: #88f3ed;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+.main {
+  width: 99vw;
+}
+.sobre {
+  padding: 40px 85px;
+  background-color: lightgrey;
+  height: 30vh;
+}
+.sobre h3 {
+  font-size: 29px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+}
+.historia {
+  margin: 10px 30px;
+  font-size: 22px;
+}
+.idiomas {
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.linguas {
+  font-size: 18px;
+  margin-top: 3px;
+}
+.cursos-concluidos {
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.cursos-concluidos-items {
+  font-size: 18px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.projetos {
+  width: 99vw;
+  background-color: rgb(227, 227, 235);
+  padding: 30px;
+  box-sizing: border-box;
+}
+.projeto-container {
+  border: 2px solid black;
+  padding: 35px 30px;
+  border-radius: 20px;
+  background-color: rgb(199, 194, 194);
+  margin-bottom: 30px;
+}
+.projeto-container h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.projeto-container a {
+  text-decoration: none;
+  color: black;
+}
+.projeto-container a:hover {
+  text-decoration: underline;
+}
+.container-app {
+  display: flex;
+  align-items: initial;
+}
+.container-app img {
+  width: 300px;
+  margin-right: 20px;
+  box-shadow: 2px 2px 8px black;
+}
+.projeto-sobre {
+  font-size: 18px;
+}
+.projeto-app-sobre {
+  font-size: 22px;
+  font-weight: bold;
+}
+.border-radius img {
+  width: 150px;
+}
+.cursos {
+  text-align: center;
+  background-color: #49eede;
+  font-size: 22px;
+  padding: 10px 0;
+}
+.cursos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  font-size: 19px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+}
+.descricao-api {
+  font-size: 12px;
+}
+.descricao-api a {
+  text-decoration: none;
+  color: black;
+}
+.descricao-api a:hover {
+  text-decoration: underline;
+}
+footer {
+  height: 100px;
+  background-color: #8898f3;
+}
+.contato {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+.contato a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.contato a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 440px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    height: 80px;
+  }
+  .sobre {
+    height: unset;
+    padding: 40px 30px;
+  }
+  .profile-img {
+    display: none;
+  }
+  .main {
+    width: 96vw;
+  }
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .historia {
+    margin: 0;
+  }
+  .container-app {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .container-app img {
+    width: 280px;
+  }
+  .projetos {
+    width: 96vw;
+  }
+
+  .projeto-container {
+    padding: 0 15px 30px 15px;
+  }
+  .projeto-container h3 {
+    padding-top: 30px;
+  }
+  .projeto-sobre {
+    margin-top: 30px;
+  }
+  .border-radius img {
+    margin: 0 auto;
+    width: 150px;
+  }
+  .cursos {
+    width: 100%;
+  }
+}
