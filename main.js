@@ -5,14 +5,16 @@ let contato = document.querySelector('#contato');
 let projetos = document.querySelector('#projetos');
 let topBtn = document.querySelector('#top-btn');
 let data_info;
+
 getApi();
 
 window.onscroll = () =>{
+
     if( document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
         topBtn.style.display = 'block';
     }else{
         topBtn.style.display = 'none'
-    }
+    }   
 }
 
 topBtn.addEventListener('click', () => {
@@ -24,7 +26,12 @@ topBtn.addEventListener('click', () => {
 function getApi(){
 
     const API_TOKEN = '4be5b394c384ad9199396a5bc40dfb42aa43b5aeff3e911474dd59f9374362ed';
-    fetch(`https://cursos.alura.com.br/api/dashboard/${API_TOKEN}`)
+    fetch(`https://cursos.alura.com.br/api/dashboard/${API_TOKEN}`, {
+
+       credentials:'same-origin'
+        
+        
+    })
     .then(res => res.json())
     .then(data => data_info = data)
     .then(data =>  rodar() )
@@ -34,7 +41,8 @@ function getApi(){
 
 
 function rodar(){
-    console.log(data_info.courseProgresses)
+
+    //console.log(data_info.courseProgresses)
     let cursos = document.querySelector('#cursos-container');
     data_info.courseProgresses.forEach((item, index) => {
 
@@ -44,15 +52,20 @@ function rodar(){
 
     })
 
-
 }
 
 sobre.addEventListener('click', () => {
+
     document.querySelector('.sobre').scrollIntoView();
+
 })
 projetos.addEventListener('click', () => {
+
     document.querySelector('.projetos').scrollIntoView();
+
 });
 contato.addEventListener('click', () => {
+
     document.querySelector('footer').scrollIntoView();
+
 })
