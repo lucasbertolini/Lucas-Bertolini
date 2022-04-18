@@ -187,7 +187,7 @@ footer {
     display: none;
   }
   .main {
-    width: 96vw;
+    width: 100vw;
   }
   .container {
     flex-direction: column;
@@ -204,7 +204,7 @@ footer {
     width: 280px;
   }
   .projetos {
-    width: 96vw;
+    width: 100vw;
   }
 
   .projeto-container {
