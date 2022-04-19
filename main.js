@@ -6,7 +6,7 @@ let projetos = document.querySelector('#projetos');
 let topBtn = document.querySelector('#top-btn');
 let data_info;
 
-getApi();
+//getApi();
 
 window.onscroll = () =>{
 
@@ -26,12 +26,7 @@ topBtn.addEventListener('click', () => {
 function getApi(){
 
     const API_TOKEN = '4be5b394c384ad9199396a5bc40dfb42aa43b5aeff3e911474dd59f9374362ed';
-    fetch(`https://cursos.alura.com.br/api/dashboard/${API_TOKEN}`, {
-
-       credentials:'same-origin'
-        
-        
-    })
+    fetch(`https://cursos.alura.com.br/api/dashboard/${API_TOKEN}`) //testeasdasd
     .then(res => res.json())
     .then(data => data_info = data)
     .then(data =>  rodar() )

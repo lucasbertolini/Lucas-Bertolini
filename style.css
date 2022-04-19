@@ -226,4 +226,7 @@ footer {
   .cursos {
     width: 100%;
   }
+  .contato {
+    padding: 30px 30px;
+  }
 }
