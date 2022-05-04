@@ -45,7 +45,8 @@
 .sobre {
   padding: 40px 85px;
   background-color: lightgrey;
-  height: 30vh;
+  height: auto;
+
 }
 .sobre h3 {
   font-size: 29px;
@@ -178,10 +179,13 @@ footer {
     align-items: center;
     padding: 10px 0;
     height: 80px;
+    width:100vw;
   }
   .sobre {
     height: unset;
     padding: 40px 30px;
+    width:100%;
+    box-sizing:border-box;
   }
   .profile-img {
     display: none;
@@ -228,5 +232,9 @@ footer {
   }
   .contato {
     padding: 30px 30px;
+  }
+  footer{
+    box-sizing:border-box;
+    width:100vw;
   }
 }
