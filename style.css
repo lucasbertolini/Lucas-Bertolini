@@ -125,7 +125,7 @@
   font-size: 22px;
   font-weight: bold;
 }
-.border-radius img {
+.portrait__image img {
   width: 150px;
 }
 .cursos {
@@ -172,7 +172,19 @@ footer {
 .contato a:hover {
   text-decoration: underline;
 }
+.lista{
+  padding-left:20px;
+}
+.tecnologias {
+  padding-top: 10px;
+}
 
+.image {
+
+  width:100px;
+  height: 320px;
+  aspect-ratio: 3/2;  
+}
 @media screen and (max-width: 440px) {
   .nav {
     flex-direction: column;
